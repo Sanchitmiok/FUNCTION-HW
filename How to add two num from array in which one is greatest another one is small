@@ -1,0 +1,15 @@
+//we create function to add 2 num from array
+//FUNCTION
+int sum(int arr[],int size){
+int max_VALUE=INT16_MIN;
+int min_VALUE=INT16_MAX;
+for (int i=0;i<size;i++){
+    int max_VALUE=max(max_VALUE,arr[i]);
+    int min_VALUE=min (min_VALUE,arr[i]);
+}
+
+int ans=max_VALUE+min_VALUE;
+return ans;
+}
+
+//its just a function
